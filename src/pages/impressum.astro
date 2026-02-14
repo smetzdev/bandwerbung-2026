@@ -30,7 +30,7 @@ import Layout from '../components/Layout.astro';
                transition-all duration-200 hover:border-accent/40 hover:bg-surface-card-hover
                focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         data-sound="smooth-operator"
-        aria-label="Sascha Metz — spielt Smooth Operator ab"
+        aria-label="Sascha Metz — spielt einen lustigen Sound ab"
       >
         <div class="text-2xl mb-2 transition-transform duration-200 group-active:scale-125">
           &#127911;
@@ -48,7 +48,7 @@ import Layout from '../components/Layout.astro';
                transition-all duration-200 hover:border-accent/40 hover:bg-surface-card-hover
                focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         data-sound="star-trek"
-        aria-label="Dolores Sommer — spielt Star Trek Theme ab"
+        aria-label="Dolores Sommer — spielt einen lustigen Sound ab"
       >
         <div class="text-2xl mb-2 transition-transform duration-200 group-active:scale-125">
           &#128640;
@@ -66,7 +66,7 @@ import Layout from '../components/Layout.astro';
                transition-all duration-200 hover:border-accent/40 hover:bg-surface-card-hover
                focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
         data-sound="ai-powerup"
-        aria-label="Claude Code — spielt Maschinenklänge ab"
+        aria-label="Claude Code — spielt einen lustigen Sound ab"
       >
         <div class="text-2xl mb-2 transition-transform duration-200 group-active:scale-125">
           &#129302;
@@ -85,90 +85,10 @@ import Layout from '../components/Layout.astro';
 </Layout>
 
 <script>
-  const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
-
-  function playNote(freq: number, startTime: number, duration: number, type: OscillatorType = 'sine', gain = 0.3) {
-    const osc = audioCtx.createOscillator();
-    const gainNode = audioCtx.createGain();
-    osc.type = type;
-    osc.frequency.setValueAtTime(freq, startTime);
-    gainNode.gain.setValueAtTime(gain, startTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.001, startTime + duration);
-    osc.connect(gainNode);
-    gainNode.connect(audioCtx.destination);
-    osc.start(startTime);
-    osc.stop(startTime + duration);
-  }
-
-  function playSmoothOperator() {
-    const now = audioCtx.currentTime;
-    // "Smooooth Operator" vocal melody approximation — warm sine tones
-    const melody = [
-      { freq: 293.66, dur: 0.6 },  // D4 — "Smoooooth"
-      { freq: 329.63, dur: 0.3 },  // E4
-      { freq: 369.99, dur: 0.3 },  // F#4
-      { freq: 329.63, dur: 0.4 },  // E4
-      { freq: 293.66, dur: 0.8 },  // D4 — "Op-er-a-tor"
-      { freq: 261.63, dur: 0.3 },  // C4
-      { freq: 293.66, dur: 0.6 },  // D4
-    ];
-
-    let t = now;
-    for (const note of melody) {
-      playNote(note.freq, t, note.dur, 'sine', 0.25);
-      // Add a subtle octave-up shimmer
-      playNote(note.freq * 2, t, note.dur, 'sine', 0.05);
-      t += note.dur;
-    }
-  }
-
-  function playStarTrek() {
-    const now = audioCtx.currentTime;
-    // Star Trek: Enterprise theme — iconic opening fanfare approximation
-    const melody = [
-      { freq: 233.08, dur: 1.0 },   // Bb3 — opening long note
-      { freq: 349.23, dur: 0.5 },   // F4
-      { freq: 466.16, dur: 0.8 },   // Bb4
-      { freq: 587.33, dur: 0.5 },   // D5
-      { freq: 698.46, dur: 1.2 },   // F5 — soaring high note
-    ];
-
-    let t = now;
-    for (const note of melody) {
-      // Brass-like sawtooth with lower gain
-      playNote(note.freq, t, note.dur, 'sawtooth', 0.12);
-      // Add body with a sine an octave below
-      playNote(note.freq / 2, t, note.dur, 'sine', 0.08);
-      t += note.dur * 0.85; // slight overlap for legato feel
-    }
-  }
-
-  function playAIPowerup() {
-    const now = audioCtx.currentTime;
-    // Rising arpeggio with stacked oscillators — "AI awakening"
-    const notes = [130.81, 164.81, 196.00, 261.63, 329.63, 392.00, 523.25, 659.25];
-    const step = 0.12;
-
-    for (let i = 0; i < notes.length; i++) {
-      const t = now + i * step;
-      // Main tone (square for digital feel)
-      playNote(notes[i], t, 0.4, 'square', 0.08);
-      // Harmonic (triangle, softer)
-      playNote(notes[i] * 1.5, t, 0.3, 'triangle', 0.04);
-    }
-
-    // Final power chord
-    const chordTime = now + notes.length * step;
-    playNote(261.63, chordTime, 1.5, 'sawtooth', 0.1);  // C4
-    playNote(329.63, chordTime, 1.5, 'sawtooth', 0.1);  // E4
-    playNote(392.00, chordTime, 1.5, 'sawtooth', 0.1);  // G4
-    playNote(523.25, chordTime, 1.5, 'sawtooth', 0.06); // C5
-  }
-
-  const sounds: Record<string, () => void> = {
-    'smooth-operator': playSmoothOperator,
-    'star-trek': playStarTrek,
-    'ai-powerup': playAIPowerup,
+  const sounds: Record<string, HTMLAudioElement> = {
+    'smooth-operator': new Audio('/sounds/fart.mp3'),
+    'star-trek': new Audio('/sounds/chimes.mp3'),
+    'ai-powerup': new Audio('/sounds/robot.mp3'),
   };
 
   document.addEventListener('click', (e) => {
@@ -178,12 +98,9 @@ import Layout from '../components/Layout.astro';
     const soundKey = btn.dataset.sound;
     if (!soundKey || !sounds[soundKey]) return;
 
-    // Resume audio context (required by browsers after user gesture)
-    if (audioCtx.state === 'suspended') {
-      audioCtx.resume();
-    }
-
-    sounds[soundKey]();
+    const audio = sounds[soundKey];
+    audio.currentTime = 0;
+    audio.play();
 
     // Visual pulse feedback
     btn.classList.add('animate-pulse');

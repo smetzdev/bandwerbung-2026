@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.soundjay.com)",
+      "Bash(curl:*)",
+      "WebFetch(domain:pixabay.com)"
+    ]
+  }
+}

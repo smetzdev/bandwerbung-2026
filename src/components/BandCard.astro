@@ -1,22 +1,31 @@
 ---
 interface Props {
   bandNameTitleCase: string;
+  bandNameSlug: string;
   exampleLink: string;
   hometown: string;
   genre: string[];
 }
 
-const { bandNameTitleCase, exampleLink, hometown, genre } = Astro.props;
+const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.props;
 ---
 
 <article
-  class="group flex flex-col rounded-lg border border-border bg-surface-card p-5
+  class="band-card group flex flex-col rounded-lg border border-border bg-surface-card p-5
          transition-colors duration-200 hover:bg-surface-card-hover hover:border-accent/40
          focus-within:ring-2 focus-within:ring-accent"
+  data-band-slug={bandNameSlug}
 >
-  <h2 class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
-    {bandNameTitleCase}
-  </h2>
+  <div class="flex items-start gap-3">
+    <input
+      type="checkbox"
+      class="band-checkbox mt-1"
+      aria-label={`${bandNameTitleCase} als geprüft markieren`}
+    />
+    <h2 class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
+      {bandNameTitleCase}
+    </h2>
+  </div>
 
   <p class="mt-1 text-sm text-text-secondary">
     <span class="sr-only">Herkunft: </span>
@@ -60,3 +69,58 @@ const { bandNameTitleCase, exampleLink, hometown, genre } = Astro.props;
     </a>
   </div>
 </article>
+
+<script>
+  function initCheckedBands() {
+    const STORAGE_KEY = 'checkedBands';
+
+    function getCheckedBands(): Record<string, boolean> {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      } catch {
+        return {};
+      }
+    }
+
+    function saveCheckedBands(checked: Record<string, boolean>) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(checked));
+    }
+
+    // Restore checked state from localStorage
+    const checked = getCheckedBands();
+    for (const slug of Object.keys(checked)) {
+      const card = document.querySelector<HTMLElement>(`.band-card[data-band-slug="${slug}"]`);
+      if (card) {
+        card.setAttribute('data-checked', '');
+        const checkbox = card.querySelector<HTMLInputElement>('.band-checkbox');
+        if (checkbox) checkbox.checked = true;
+      }
+    }
+
+    // Listen for checkbox changes
+    document.addEventListener('change', (e) => {
+      const checkbox = e.target as HTMLInputElement;
+      if (!checkbox.classList.contains('band-checkbox')) return;
+
+      const card = checkbox.closest<HTMLElement>('.band-card');
+      if (!card) return;
+
+      const slug = card.dataset.bandSlug;
+      if (!slug) return;
+
+      const currentChecked = getCheckedBands();
+
+      if (checkbox.checked) {
+        currentChecked[slug] = true;
+        card.setAttribute('data-checked', '');
+      } else {
+        delete currentChecked[slug];
+        card.removeAttribute('data-checked');
+      }
+
+      saveCheckedBands(currentChecked);
+    });
+  }
+
+  initCheckedBands();
+</script>

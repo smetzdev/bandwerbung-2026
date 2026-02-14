@@ -31,6 +31,7 @@ const bands: Band[] = (bandsData as Band[]).sort((a, b) =>
     {bands.map((band) => (
       <BandCard
         bandNameTitleCase={band.bandNameTitleCase}
+        bandNameSlug={band.bandNameSlug}
         exampleLink={band.exampleLink}
         hometown={band.hometown}
         genre={band.genre}

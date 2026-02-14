@@ -19,11 +19,18 @@ const bands: Band[] = (bandsData as Band[]).sort((a, b) =>
 ---
 
 <Layout title="Bandbewerbungen – Schlacht um Otzenhausen 2026">
-  <p class="mb-6 text-text-secondary">
+  <p id="band-count" class="mb-6 text-text-secondary">
     {bands.length} Bands haben sich beworben
   </p>
 
+  <div id="rating-filter" class="filter-bar mb-6 hidden" role="toolbar" aria-label="Bewertungsfilter">
+    <button type="button" class="filter-btn" data-filter="all" data-active="true" aria-pressed="true">Alle</button>
+    <button type="button" class="filter-btn" data-filter="up" aria-pressed="false">Daumen hoch</button>
+    <button type="button" class="filter-btn" data-filter="down" aria-pressed="false">Daumen runter</button>
+  </div>
+
   <div
+    id="band-grid"
     class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     role="region"
     aria-label="Bandliste"
@@ -39,3 +46,86 @@ const bands: Band[] = (bandsData as Band[]).sort((a, b) =>
     ))}
   </div>
 </Layout>
+
+<script>
+  function initFilterBar() {
+    const RATINGS_KEY = 'bandRatings';
+    const filterBar = document.getElementById('rating-filter');
+    const bandCount = document.getElementById('band-count');
+    const totalBands = document.querySelectorAll('.band-card').length;
+    let activeFilter = 'all';
+
+    function getRatings(): Record<string, string> {
+      try {
+        return JSON.parse(localStorage.getItem(RATINGS_KEY) || '{}');
+      } catch {
+        return {};
+      }
+    }
+
+    function updateFilterVisibility() {
+      if (!filterBar) return;
+      const ratings = getRatings();
+      const hasRatings = Object.keys(ratings).length > 0;
+      filterBar.classList.toggle('hidden', !hasRatings);
+    }
+
+    function applyFilter(filter: string) {
+      activeFilter = filter;
+      const cards = document.querySelectorAll<HTMLElement>('.band-card');
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const ratingValue = card.dataset.ratingValue;
+        let show = true;
+
+        if (filter === 'up') {
+          show = ratingValue === 'up';
+        } else if (filter === 'down') {
+          show = ratingValue === 'down';
+        }
+
+        card.style.display = show ? '' : 'none';
+        if (show) visibleCount++;
+      });
+
+      // Update count text
+      if (bandCount) {
+        if (filter === 'all') {
+          bandCount.textContent = `${totalBands} Bands haben sich beworben`;
+        } else {
+          const label = filter === 'up' ? 'positiv' : 'negativ';
+          bandCount.textContent = `${visibleCount} von ${totalBands} Bands ${label} bewertet`;
+        }
+      }
+
+      // Update button states
+      filterBar?.querySelectorAll<HTMLButtonElement>('.filter-btn').forEach((btn) => {
+        const isActive = btn.dataset.filter === filter;
+        btn.dataset.active = String(isActive);
+        btn.setAttribute('aria-pressed', String(isActive));
+      });
+    }
+
+    // Show/hide filter bar on load
+    updateFilterVisibility();
+
+    // React to rating changes from BandCard script
+    document.addEventListener('ratings-changed', () => {
+      updateFilterVisibility();
+      // Re-apply current filter in case a rating was removed
+      applyFilter(activeFilter);
+    });
+
+    // Filter button clicks
+    filterBar?.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.filter-btn');
+      if (!btn) return;
+
+      const filter = btn.dataset.filter;
+      if (filter) applyFilter(filter);
+    });
+  }
+
+  initFilterBar();
+</script>

@@ -1,17 +1,40 @@
 ---
+import Layout from '../components/Layout.astro';
+import BandCard from '../components/BandCard.astro';
+import bandsData from '../data/bands.json';
 
+interface Band {
+  bandName: string;
+  bandNameTitleCase: string;
+  bandNameSlug: string;
+  pdfPath: string;
+  exampleLink: string;
+  hometown: string;
+  genre: string[];
+}
+
+const bands: Band[] = (bandsData as Band[]).sort((a, b) =>
+  a.bandNameTitleCase.localeCompare(b.bandNameTitleCase, 'de')
+);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Bandbewerbungen – Schlacht um Otzenhausen 2026">
+  <p class="mb-6 text-text-secondary">
+    {bands.length} Bands haben sich beworben
+  </p>
+
+  <div
+    class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+    role="region"
+    aria-label="Bandliste"
+  >
+    {bands.map((band) => (
+      <BandCard
+        bandNameTitleCase={band.bandNameTitleCase}
+        exampleLink={band.exampleLink}
+        hometown={band.hometown}
+        genre={band.genre}
+      />
+    ))}
+  </div>
+</Layout>

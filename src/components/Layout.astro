@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Bandbewerbungen für das Festival Schlacht um Otzenhausen 2026' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-surface text-text-primary antialiased">
+    <a href="#main-content" class="skip-link">
+      Zum Inhalt springen
+    </a>
+
+    <header class="border-b border-border px-4 py-8 text-center">
+      <h1 class="font-heading text-4xl sm:text-5xl md:text-6xl text-accent tracking-wide">
+        Schlacht um Otzenhausen 2026
+      </h1>
+      <p class="mt-3 text-text-secondary text-lg">
+        Bandbewerbungen
+      </p>
+    </header>
+
+    <main id="main-content" class="mx-auto max-w-7xl px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-border px-4 py-6 text-center text-text-secondary text-sm">
+      <p>&copy; 2026 Celtic Warriors Otzenhausen</p>
+    </footer>
+  </body>
+</html>

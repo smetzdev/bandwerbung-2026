@@ -20,6 +20,6 @@ No test framework is configured.
 - **Styling:** Tailwind CSS v4 via `@tailwindcss/vite` plugin — no tailwind.config file; uses v4 inline/CSS-based configuration in `src/styles/global.css`
 - **Data:** Band content lives in `src/data/bands.json` — array of objects with fields: `bandName`, `bandNameTitleCase`, `bandNameSlug`, `pdfPath`, `exampleLink`, `hometown`, `genre` (string array)
 - **Components:** `src/components/Layout.astro` (HTML shell, skip-link, header/footer) and `BandCard.astro` (accessible card with article semantics, genre badges, external link button)
-- **Theme:** Custom color tokens defined via `@theme` in `global.css` (surface, accent, border, text-primary/secondary). Metal Mania Google Font for headings only, system sans for body. All colors meet WCAG AAA contrast.
+- **Theme:** Custom color tokens defined via `@theme` in `global.css` (surface, accent, border, text-primary/secondary). Heatwerk self-hosted font (`src/fonts/`) for headings only, system sans for body. All colors meet WCAG AAA contrast.
 - **Pages:** File-based routing in `src/pages/` (currently only `index.astro`)
 - **Static assets:** `public/` directory (served as-is at site root)

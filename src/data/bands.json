@@ -988,5 +988,14 @@
     "exampleLink": "https://www.dropbox.com/scl/fo/rsvc93nt4wfsjqzoyeexh/ALefJY-KpH5hBPC-NZEtjjk/Kingsmash%20EP%20MP3?dl=0&rlkey=k1vzoht95w99lmz3h4gx96uo8&subfolder_nav_tracking=1",
     "hometown": "Schwarzwald, Baden-Württemberg",
     "genre": ["Power Metal"]
+  },
+  {
+    "bandName": "Steelpreacher",
+    "bandNameTitleCase": "Steelpreacher",
+    "bandNameSlug": "steelpreacher",
+    "pdfPath": "",
+    "exampleLink": "https://www.youtube.com/watch?v=y_Yfjm3ILD8",
+    "hometown": "Koblenz, Rheinland-Pfalz",
+    "genre": ["Heavy Metal"]
   }
 ]

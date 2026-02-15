@@ -16,11 +16,39 @@ interface Band {
 const bands: Band[] = (bandsData as Band[]).sort((a, b) =>
   a.bandNameTitleCase.localeCompare(b.bandNameTitleCase, 'de')
 );
+
+const allGenres = [...new Set(bands.flatMap((b) => b.genre))].sort((a, b) =>
+  a.localeCompare(b, 'de')
+);
 ---
 
 <Layout title="Bandbewerbungen – Schlacht um Otzenhausen 2026">
-  <p id="band-count" class="mb-6 text-text-secondary">
+  <div class="mb-6 flex flex-col gap-4">
+    <input
+      type="search"
+      id="band-search"
+      class="search-input"
+      placeholder="Band suchen…"
+      aria-label="Bands nach Name durchsuchen"
+      autocomplete="off"
+    />
+
+    <div id="genre-filter" class="flex flex-wrap gap-2" role="group" aria-label="Genre-Filter">
+      <button type="button" class="genre-btn" data-genre="all" data-active="true" aria-pressed="true">Alle</button>
+      {allGenres.map((genre) => (
+        <button type="button" class="genre-btn" data-genre={genre.toLowerCase()} aria-pressed="false">
+          {genre}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <p id="band-count" class="mb-6 text-text-secondary" aria-live="polite">
     {bands.length} Bands haben sich beworben
+  </p>
+
+  <p id="no-results" class="hidden py-12 text-center text-text-secondary text-lg">
+    Keine Bands gefunden.
   </p>
 
   <div id="rating-filter" class="filter-bar mb-6 hidden" role="toolbar" aria-label="Bewertungsfilter">
@@ -48,12 +76,20 @@ const bands: Band[] = (bandsData as Band[]).sort((a, b) =>
 </Layout>
 
 <script>
-  function initFilterBar() {
+  function initFilters() {
     const RATINGS_KEY = 'bandRatings';
     const filterBar = document.getElementById('rating-filter');
     const bandCount = document.getElementById('band-count');
-    const totalBands = document.querySelectorAll('.band-card').length;
-    let activeFilter = 'all';
+    const searchInput = document.getElementById('band-search') as HTMLInputElement;
+    const genreFilter = document.getElementById('genre-filter');
+    const noResults = document.getElementById('no-results');
+    const bandGrid = document.getElementById('band-grid');
+    const cards = document.querySelectorAll<HTMLElement>('.band-card');
+    const totalBands = cards.length;
+
+    let activeRatingFilter = 'all';
+    let activeGenres = new Set<string>();
+    let searchQuery = '';
 
     function getRatings(): Record<string, string> {
       try {
@@ -70,62 +106,121 @@ const bands: Band[] = (bandsData as Band[]).sort((a, b) =>
       filterBar.classList.toggle('hidden', !hasRatings);
     }
 
-    function applyFilter(filter: string) {
-      activeFilter = filter;
-      const cards = document.querySelectorAll<HTMLElement>('.band-card');
+    function applyAllFilters() {
       let visibleCount = 0;
 
       cards.forEach((card) => {
+        const bandName = card.dataset.bandName || '';
+        const cardGenres = (card.dataset.genres || '').split(',');
         const ratingValue = card.dataset.ratingValue;
-        let show = true;
 
-        if (filter === 'up') {
-          show = ratingValue === 'up';
-        } else if (filter === 'down') {
-          show = ratingValue === 'down';
+        // Search filter
+        const matchesSearch = !searchQuery || bandName.includes(searchQuery);
+
+        // Genre filter
+        const matchesGenre = activeGenres.size === 0 ||
+          cardGenres.some((g) => activeGenres.has(g));
+
+        // Rating filter
+        let matchesRating = true;
+        if (activeRatingFilter === 'up') {
+          matchesRating = ratingValue === 'up';
+        } else if (activeRatingFilter === 'down') {
+          matchesRating = ratingValue === 'down';
         }
 
+        const show = matchesSearch && matchesGenre && matchesRating;
         card.style.display = show ? '' : 'none';
         if (show) visibleCount++;
       });
 
-      // Update count text
+      // Update count
       if (bandCount) {
-        if (filter === 'all') {
+        if (visibleCount === totalBands) {
           bandCount.textContent = `${totalBands} Bands haben sich beworben`;
         } else {
-          const label = filter === 'up' ? 'positiv' : 'negativ';
-          bandCount.textContent = `${visibleCount} von ${totalBands} Bands ${label} bewertet`;
+          bandCount.textContent = `${visibleCount} von ${totalBands} Bands`;
         }
       }
 
-      // Update button states
+      // No results message
+      if (noResults && bandGrid) {
+        noResults.classList.toggle('hidden', visibleCount > 0);
+        bandGrid.classList.toggle('hidden', visibleCount === 0);
+      }
+
+      // Update rating button states
       filterBar?.querySelectorAll<HTMLButtonElement>('.filter-btn').forEach((btn) => {
-        const isActive = btn.dataset.filter === filter;
+        const isActive = btn.dataset.filter === activeRatingFilter;
         btn.dataset.active = String(isActive);
         btn.setAttribute('aria-pressed', String(isActive));
       });
     }
 
-    // Show/hide filter bar on load
-    updateFilterVisibility();
-
-    // React to rating changes from BandCard script
-    document.addEventListener('ratings-changed', () => {
-      updateFilterVisibility();
-      // Re-apply current filter in case a rating was removed
-      applyFilter(activeFilter);
+    // --- Search ---
+    searchInput?.addEventListener('input', () => {
+      searchQuery = searchInput.value.toLowerCase().trim();
+      applyAllFilters();
     });
 
-    // Filter button clicks
+    // --- Genre filter ---
+    genreFilter?.addEventListener('click', (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.genre-btn');
+      if (!btn) return;
+
+      const genre = btn.dataset.genre;
+      if (!genre) return;
+
+      if (genre === 'all') {
+        activeGenres.clear();
+        genreFilter.querySelectorAll<HTMLButtonElement>('.genre-btn').forEach((b) => {
+          b.dataset.active = String(b.dataset.genre === 'all');
+          b.setAttribute('aria-pressed', String(b.dataset.genre === 'all'));
+        });
+      } else {
+        // Toggle this genre
+        if (activeGenres.has(genre)) {
+          activeGenres.delete(genre);
+        } else {
+          activeGenres.add(genre);
+        }
+
+        // Update button states
+        genreFilter.querySelectorAll<HTMLButtonElement>('.genre-btn').forEach((b) => {
+          if (b.dataset.genre === 'all') {
+            const allActive = activeGenres.size === 0;
+            b.dataset.active = String(allActive);
+            b.setAttribute('aria-pressed', String(allActive));
+          } else {
+            const isActive = activeGenres.has(b.dataset.genre || '');
+            b.dataset.active = String(isActive);
+            b.setAttribute('aria-pressed', String(isActive));
+          }
+        });
+      }
+
+      applyAllFilters();
+    });
+
+    // --- Rating filter ---
+    updateFilterVisibility();
+
+    document.addEventListener('ratings-changed', () => {
+      updateFilterVisibility();
+      applyAllFilters();
+    });
+
     filterBar?.addEventListener('click', (e) => {
       const btn = (e.target as HTMLElement).closest<HTMLButtonElement>('.filter-btn');
       if (!btn) return;
 
       const filter = btn.dataset.filter;
-      if (filter) applyFilter(filter);
+      if (filter) {
+        activeRatingFilter = filter;
+        applyAllFilters();
+      }
     });
   }
 
-  initFilterBar();
+  initFilters();
 </script>

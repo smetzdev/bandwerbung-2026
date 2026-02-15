@@ -39,6 +39,7 @@
       radial-gradient(ellipse 120% 40% at 50% 0%, rgba(127, 10, 10, 0.25) 0%, transparent 70%),
       radial-gradient(ellipse 80% 50% at 50% 100%, rgba(100, 5, 5, 0.18) 0%, transparent 60%),
       var(--color-surface);
+    background-attachment: fixed;
   }
 
   /* Vignette overlay */

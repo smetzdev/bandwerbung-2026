@@ -23,7 +23,7 @@ const allGenres = [...new Set(bands.flatMap((b) => b.genre))].sort((a, b) =>
 ---
 
 <Layout title="Bandbewerbungen – Schlacht um Otzenhausen 2026">
-  <div class="mb-6 flex flex-col gap-4">
+  <search aria-label="Bands filtern" class="mb-6 flex flex-col gap-4">
     <input
       type="search"
       id="band-search"
@@ -41,7 +41,13 @@ const allGenres = [...new Set(bands.flatMap((b) => b.genre))].sort((a, b) =>
         </button>
       ))}
     </div>
-  </div>
+
+    <div id="rating-filter" class="filter-bar hidden" role="toolbar" aria-label="Bewertungsfilter">
+      <button type="button" class="filter-btn" data-filter="all" data-active="true" aria-pressed="true">Alle</button>
+      <button type="button" class="filter-btn" data-filter="up" aria-pressed="false">Daumen hoch</button>
+      <button type="button" class="filter-btn" data-filter="down" aria-pressed="false">Daumen runter</button>
+    </div>
+  </search>
 
   <p id="band-count" class="mb-6 text-text-secondary" aria-live="polite">
     {bands.length} Bands haben sich beworben
@@ -50,12 +56,6 @@ const allGenres = [...new Set(bands.flatMap((b) => b.genre))].sort((a, b) =>
   <p id="no-results" class="hidden py-12 text-center text-text-secondary text-lg">
     Keine Bands gefunden.
   </p>
-
-  <div id="rating-filter" class="filter-bar mb-6 hidden" role="toolbar" aria-label="Bewertungsfilter">
-    <button type="button" class="filter-btn" data-filter="all" data-active="true" aria-pressed="true">Alle</button>
-    <button type="button" class="filter-btn" data-filter="up" aria-pressed="false">Daumen hoch</button>
-    <button type="button" class="filter-btn" data-filter="down" aria-pressed="false">Daumen runter</button>
-  </div>
 
   <div
     id="band-grid"

@@ -7,7 +7,8 @@ interface Props {
   genre: string[];
 }
 
-const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.props;
+const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } =
+  Astro.props;
 ---
 
 <article
@@ -16,7 +17,7 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
          focus-within:ring-2 focus-within:ring-accent"
   data-band-slug={bandNameSlug}
   data-band-name={bandNameTitleCase.toLowerCase()}
-  data-genres={genre.map(g => g.toLowerCase()).join(',')}
+  data-genres={genre.map((g) => g.toLowerCase()).join(",")}
 >
   <div class="flex flex-col p-5 pb-3 flex-1">
     <div class="flex items-start gap-3">
@@ -25,7 +26,9 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
         class="band-checkbox mt-1"
         aria-label={`${bandNameTitleCase} als geprüft markieren`}
       />
-      <h2 class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors">
+      <h2
+        class="text-xl font-bold text-text-primary group-hover:text-accent transition-colors"
+      >
         {bandNameTitleCase}
       </h2>
     </div>
@@ -36,15 +39,17 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
     </p>
 
     <div class="mt-3 flex flex-wrap gap-2" role="list" aria-label="Genres">
-      {genre.map((g) => (
-        <span
-          role="listitem"
-          class="inline-block rounded-full border border-accent-warm/30 bg-accent-warm/10
+      {
+        genre.map((g) => (
+          <span
+            role="listitem"
+            class="inline-block rounded-full border border-accent-warm/30 bg-accent-warm/10
                  px-2.5 py-0.5 text-xs font-medium text-accent-warm"
-        >
-          {g}
-        </span>
-      ))}
+          >
+            {g}
+          </span>
+        ))
+      }
     </div>
 
     <div class="mt-auto pt-4">
@@ -65,7 +70,9 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
           class="h-4 w-4"
           aria-hidden="true"
         >
-          <path d="M6.3 2.84A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.27l9.344-5.891a1.5 1.5 0 000-2.538L6.3 2.841z" />
+          <path
+            d="M6.3 2.84A1.5 1.5 0 004 4.11v11.78a1.5 1.5 0 002.3 1.27l9.344-5.891a1.5 1.5 0 000-2.538L6.3 2.841z"
+          ></path>
         </svg>
         Anhören
         <span class="sr-only">(öffnet in neuem Tab)</span>
@@ -83,13 +90,35 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
       aria-pressed="false"
     >
       <!-- Outlined thumb up -->
-      <svg class="h-5 w-5 thumb-outline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V3a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m.729-14.1a3 3 0 0 0-2.122-.879H3.75a.75.75 0 0 0-.75.75v13.5a.75.75 0 0 0 .75.75h.846a3 3 0 0 1 2.122.879" />
+      <svg
+        class="h-5 w-5 thumb-outline"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V3a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m.729-14.1a3 3 0 0 0-2.122-.879H3.75a.75.75 0 0 0-.75.75v13.5a.75.75 0 0 0 .75.75h.846a3 3 0 0 1 2.122.879"
+        ></path>
       </svg>
       <!-- Filled thumb up -->
-      <svg class="h-5 w-5 thumb-filled hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V3a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H7.493Z" />
-        <path d="M5.625 18.336a6.75 6.75 0 0 1-1.875-4.711 6.75 6.75 0 0 1 1.875-4.711v9.422Z" />
+      <svg
+        class="h-5 w-5 thumb-filled hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M7.493 18.5c-.425 0-.82-.236-.975-.632A7.48 7.48 0 0 1 6 15.125c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V3a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H7.493Z"
+        ></path>
+        <path
+          d="M5.625 18.336a6.75 6.75 0 0 1-1.875-4.711 6.75 6.75 0 0 1 1.875-4.711v9.422Z"
+        ></path>
       </svg>
     </button>
 
@@ -101,13 +130,33 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
       aria-pressed="false"
     >
       <!-- Outlined thumb down -->
-      <svg class="h-5 w-5 thumb-outline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715A12.137 12.137 0 0 1 2.25 12c0-2.848.992-5.464 2.649-7.521C5.287 3.997 5.886 3.75 6.504 3.75h4.369c.483 0 .964.078 1.423.23l3.114 1.04a4.501 4.501 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.5a2.25 2.25 0 0 0 2.25 2.25.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384" />
+      <svg
+        class="h-5 w-5 thumb-outline"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M7.498 15.25H4.372c-1.026 0-1.945-.694-2.054-1.715A12.137 12.137 0 0 1 2.25 12c0-2.848.992-5.464 2.649-7.521C5.287 3.997 5.886 3.75 6.504 3.75h4.369c.483 0 .964.078 1.423.23l3.114 1.04a4.501 4.501 0 0 0 1.423.23h1.294M7.498 15.25c.618 0 .991.724.725 1.282A7.471 7.471 0 0 0 7.5 19.5a2.25 2.25 0 0 0 2.25 2.25.75.75 0 0 0 .75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 0 0 2.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384"
+        ></path>
       </svg>
       <!-- Filled thumb down -->
-      <svg class="h-5 w-5 thumb-filled hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M15.73 5.5h1.035A7.465 7.465 0 0 1 18 9.625a7.465 7.465 0 0 1-1.235 4.125h-.148c-.806 0-1.534.446-2.031 1.08a9.04 9.04 0 0 1-2.861 2.4c-.723.384-1.35.956-1.653 1.715a4.498 4.498 0 0 0-.322 1.672V21a.75.75 0 0 1-.75.75 2.25 2.25 0 0 1-2.25-2.25c0-1.152.26-2.243.723-3.218.266-.558-.107-1.282-.725-1.282H4.872c-1.026 0-1.945-.694-2.054-1.715A12.134 12.134 0 0 1 2.75 12c0-2.848.992-5.464 2.649-7.521.388-.482.987-.729 1.605-.729h4.369c.483 0 .964.078 1.423.23l3.114 1.04a4.501 4.501 0 0 0 1.423.23h.197Z" />
-        <path d="M18.375 5.664a6.75 6.75 0 0 1 0 9.422" />
+      <svg
+        class="h-5 w-5 thumb-filled hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M15.73 5.5h1.035A7.465 7.465 0 0 1 18 9.625a7.465 7.465 0 0 1-1.235 4.125h-.148c-.806 0-1.534.446-2.031 1.08a9.04 9.04 0 0 1-2.861 2.4c-.723.384-1.35.956-1.653 1.715a4.498 4.498 0 0 0-.322 1.672V21a.75.75 0 0 1-.75.75 2.25 2.25 0 0 1-2.25-2.25c0-1.152.26-2.243.723-3.218.266-.558-.107-1.282-.725-1.282H4.872c-1.026 0-1.945-.694-2.054-1.715A12.134 12.134 0 0 1 2.75 12c0-2.848.992-5.464 2.649-7.521.388-.482.987-.729 1.605-.729h4.369c.483 0 .964.078 1.423.23l3.114 1.04a4.501 4.501 0 0 0 1.423.23h.197Z"
+        ></path>
+        <path d="M18.375 5.664a6.75 6.75 0 0 1 0 9.422"></path>
       </svg>
     </button>
   </div>
@@ -115,13 +164,13 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
 
 <script>
   function initBandCardFeatures() {
-    const CHECKED_KEY = 'checkedBands';
-    const RATINGS_KEY = 'bandRatings';
+    const CHECKED_KEY = "checkedBands";
+    const RATINGS_KEY = "bandRatings";
 
     // --- Checked bands ---
     function getCheckedBands(): Record<string, boolean> {
       try {
-        return JSON.parse(localStorage.getItem(CHECKED_KEY) || '{}');
+        return JSON.parse(localStorage.getItem(CHECKED_KEY) || "{}");
       } catch {
         return {};
       }
@@ -133,19 +182,21 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
 
     const checked = getCheckedBands();
     for (const slug of Object.keys(checked)) {
-      const card = document.querySelector<HTMLElement>(`.band-card[data-band-slug="${slug}"]`);
+      const card = document.querySelector<HTMLElement>(
+        `.band-card[data-band-slug="${slug}"]`,
+      );
       if (card) {
-        card.setAttribute('data-checked', '');
-        const checkbox = card.querySelector<HTMLInputElement>('.band-checkbox');
+        card.setAttribute("data-checked", "");
+        const checkbox = card.querySelector<HTMLInputElement>(".band-checkbox");
         if (checkbox) checkbox.checked = true;
       }
     }
 
-    document.addEventListener('change', (e) => {
+    document.addEventListener("change", (e) => {
       const checkbox = e.target as HTMLInputElement;
-      if (!checkbox.classList.contains('band-checkbox')) return;
+      if (!checkbox.classList.contains("band-checkbox")) return;
 
-      const card = checkbox.closest<HTMLElement>('.band-card');
+      const card = checkbox.closest<HTMLElement>(".band-card");
       if (!card) return;
 
       const slug = card.dataset.bandSlug;
@@ -155,10 +206,10 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
 
       if (checkbox.checked) {
         currentChecked[slug] = true;
-        card.setAttribute('data-checked', '');
+        card.setAttribute("data-checked", "");
       } else {
         delete currentChecked[slug];
-        card.removeAttribute('data-checked');
+        card.removeAttribute("data-checked");
       }
 
       saveCheckedBands(currentChecked);
@@ -167,7 +218,7 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
     // --- Ratings ---
     function getRatings(): Record<string, string> {
       try {
-        return JSON.parse(localStorage.getItem(RATINGS_KEY) || '{}');
+        return JSON.parse(localStorage.getItem(RATINGS_KEY) || "{}");
       } catch {
         return {};
       }
@@ -178,16 +229,16 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
     }
 
     function setRatingUI(card: HTMLElement, rating: string | null) {
-      const zones = card.querySelectorAll<HTMLButtonElement>('.rating-zone');
+      const zones = card.querySelectorAll<HTMLButtonElement>(".rating-zone");
       zones.forEach((zone) => {
         const isActive = zone.dataset.rating === rating;
         zone.dataset.active = String(isActive);
-        zone.setAttribute('aria-pressed', String(isActive));
-        const outline = zone.querySelector('.thumb-outline');
-        const filled = zone.querySelector('.thumb-filled');
+        zone.setAttribute("aria-pressed", String(isActive));
+        const outline = zone.querySelector(".thumb-outline");
+        const filled = zone.querySelector(".thumb-filled");
         if (outline && filled) {
-          outline.classList.toggle('hidden', isActive);
-          filled.classList.toggle('hidden', !isActive);
+          outline.classList.toggle("hidden", isActive);
+          filled.classList.toggle("hidden", !isActive);
         }
       });
 
@@ -201,16 +252,20 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
     // Restore ratings from localStorage
     const ratings = getRatings();
     for (const [slug, rating] of Object.entries(ratings)) {
-      const card = document.querySelector<HTMLElement>(`.band-card[data-band-slug="${slug}"]`);
+      const card = document.querySelector<HTMLElement>(
+        `.band-card[data-band-slug="${slug}"]`,
+      );
       if (card) setRatingUI(card, rating);
     }
 
     // Listen for rating clicks
-    document.addEventListener('click', (e) => {
-      const zone = (e.target as HTMLElement).closest<HTMLButtonElement>('.rating-zone');
+    document.addEventListener("click", (e) => {
+      const zone = (e.target as HTMLElement).closest<HTMLButtonElement>(
+        ".rating-zone",
+      );
       if (!zone) return;
 
-      const card = zone.closest<HTMLElement>('.band-card');
+      const card = zone.closest<HTMLElement>(".band-card");
       if (!card) return;
 
       const slug = card.dataset.bandSlug;
@@ -233,7 +288,7 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } = Astro.
       }
 
       saveRatings(currentRatings);
-      document.dispatchEvent(new CustomEvent('ratings-changed'));
+      document.dispatchEvent(new CustomEvent("ratings-changed"));
     });
   }
 

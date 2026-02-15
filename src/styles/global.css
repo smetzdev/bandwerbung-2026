@@ -24,6 +24,7 @@
   --color-thumbs-down: #ef4444;
 
   --font-heading: 'Heatwerk', cursive;
+  --font-sans: 'Inter', sans-serif;
 }
 
 @layer base {

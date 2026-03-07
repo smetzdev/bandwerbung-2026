@@ -3,1248 +3,1358 @@
     "bandName": "EXA",
     "bandNameTitleCase": "Exa",
     "bandNameSlug": "exa",
-    "pdfPath": "pdf/.pdf",
+    "pdfPath": "pdf/exa.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=cgK2dd1JJ5s",
     "hometown": "Berlin",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "exa.thrash.booking@gmail.com"
   },
   {
     "bandName": "Beyond Darkness",
     "bandNameTitleCase": "Beyond Darkness",
     "bandNameSlug": "beyond-darkness",
-    "pdfPath": "pdf/Aufruf zur Schlacht.pdf",
+    "pdfPath": "pdf/beyond-darkness.pdf",
     "exampleLink": "https://youtu.be/nz7osbbQaMo?si=OnsgJpPTOlvQQHtT",
     "hometown": "Homburg, Saarland",
     "genre": [
       "Cover"
-    ]
+    ],
+    "contactEmailAddress": "Michael@beyonddarkness.de"
   },
   {
     "bandName": "Sattelfest",
     "bandNameTitleCase": "Sattelfest",
     "bandNameSlug": "sattelfest",
-    "pdfPath": "pdf/Band Bewerbung SATTELFEST.pdf",
+    "pdfPath": "pdf/sattelfest.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=V7MKIUlQ8wk&list=RDV7MKIUlQ8wk&start_radio=1",
     "hometown": "Leiwen, Rheinland-Pfalz",
     "genre": [
       "Hard Rock",
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "Alister-Records@t-online.de"
   },
   {
     "bandName": "Mellom",
     "bandNameTitleCase": "Mellom",
     "bandNameSlug": "mellom",
-    "pdfPath": "pdf/Band Booking Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/mellom.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=wMsKd2_ccUE",
     "hometown": "Frankfurt am Main, Hessen",
     "genre": [
       "Black",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "info@mellom.de"
   },
   {
     "bandName": "Ascending Wrath",
     "bandNameTitleCase": "Ascending Wrath",
     "bandNameSlug": "ascending-wrath",
-    "pdfPath": "pdf/Bandbewerbung  Auftrittsanfrage Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/ascending-wrath.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=a16blFWaH5s",
     "hometown": "Trier, Rheinland-Pfalz",
     "genre": [
       "Melodic",
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "info@ascending-wrath.com"
   },
   {
     "bandName": "Death Receipt",
     "bandNameTitleCase": "Death Receipt",
     "bandNameSlug": "death-receipt",
-    "pdfPath": "pdf/Bandbewerbung  Death Receipt.pdf",
+    "pdfPath": "pdf/death-receipt.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=dXXf_s0FeZM",
     "hometown": "Wallersdorf, Bayern",
     "genre": [
       "Groove",
       "Thrash",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "DeathReceipt@gmx.de"
   },
   {
     "bandName": "Final Fortune",
     "bandNameTitleCase": "Final Fortune",
     "bandNameSlug": "final-fortune",
-    "pdfPath": "pdf/Bandbewerbung  Final Fortune  SUO 2026.pdf",
+    "pdfPath": "pdf/final-fortune.pdf",
     "exampleLink": "https://open.spotify.com/album/1SlMxRf4uNzVUuuWbPYc3D?go=1&sp_cid=b144e068fae601fae7cad84647f13b31&nd=1&dlsi=3fb2f112d1604450",
     "hometown": "Brohl, Rheinland-Pfalz",
     "genre": [
       "Heavy",
       "Rock"
-    ]
+    ],
+    "contactEmailAddress": "finalfortune-booking@web.de"
   },
   {
     "bandName": "ORPHALIS",
     "bandNameTitleCase": "Orphalis",
     "bandNameSlug": "orphalis",
-    "pdfPath": "pdf/Bandbewerbung  Orphalis.pdf",
+    "pdfPath": "pdf/orphalis.pdf",
     "exampleLink": "https://open.spotify.com/artist/2piiowSUxKFBTOUqnUeisV?si=GgahhI5sSAO14D_ai9zrrA",
     "hometown": "Dortmund, Nordrhein-Westfalen",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "orphalisbooking@yahoo.com"
   },
   {
     "bandName": "Gefrierbrand",
     "bandNameTitleCase": "Gefrierbrand",
     "bandNameSlug": "gefrierbrand",
-    "pdfPath": "pdf/Bandbewerbung 2026  Melodic Death Metal-2.pdf",
+    "pdfPath": "pdf/gefrierbrand.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=E9dGrW7Wajo",
     "hometown": "Schwarzwald, Baden-Württemberg",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "booking@gefrierbrand-band.de"
   },
   {
     "bandName": "Endless Curse",
     "bandNameTitleCase": "Endless Curse",
     "bandNameSlug": "endless-curse",
-    "pdfPath": "pdf/Bandbewerbung 26.pdf",
+    "pdfPath": "pdf/endless-curse.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=nXjx6QtBaVQ",
     "hometown": "Kirchberg, Baden-Württemberg",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "contact@endlesscurse.de"
   },
   {
     "bandName": "Under False Colors",
     "bandNameTitleCase": "Under False Colors",
     "bandNameSlug": "under-false-colors",
-    "pdfPath": "pdf/Bandbewerbung Celtic Warriors Otzenhausen  Under False Colors.pdf",
+    "pdfPath": "pdf/under-false-colors.pdf",
     "exampleLink": "https://open.spotify.com/track/0AhUb624gXpRnQ2CkG9AcA?si=0a5b8167e40642d6",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Metalcore"
-    ]
+    ],
+    "contactEmailAddress": "underfalsecolors_band@gmx.de"
   },
   {
     "bandName": "Cravion",
     "bandNameTitleCase": "Cravion",
     "bandNameSlug": "cravion",
-    "pdfPath": "pdf/Bandbewerbung Cravion.pdf",
+    "pdfPath": "pdf/cravion.pdf",
     "exampleLink": "https://open.spotify.com/artist/2cZTilZsHNEKWQNSYbhCtK?si=ip5UdD6aSImHk84QJMeSzA",
     "hometown": "Bad Schönborn, Baden-Württemberg",
     "genre": [
       "Death",
       "Groove"
-    ]
+    ],
+    "contactEmailAddress": "philip_baumann@web.de"
   },
   {
     "bandName": "Drawn by Evil",
     "bandNameTitleCase": "Drawn By Evil",
     "bandNameSlug": "drawn-by-evil",
-    "pdfPath": "pdf/Bandbewerbung Drawn by Evil.pdf",
+    "pdfPath": "pdf/drawn-by-evil.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=m--5TLAsnlA",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Metal"
-    ]
+    ],
+    "contactEmailAddress": "contact@drawnbyevil.de"
   },
   {
     "bandName": "EVIL GRIN",
     "bandNameTitleCase": "Evil Grin",
     "bandNameSlug": "evil-grin",
-    "pdfPath": "pdf/Bandbewerbung EVIL GRIN.pdf",
+    "pdfPath": "pdf/evil-grin.pdf",
     "exampleLink": "https://www.youtube.com/@evilgrin6610",
     "hometown": "Herford, Nordrhein-Westfalen",
     "genre": [
       "Thrash",
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "homestudio-buchtmann@freenet.de"
   },
   {
     "bandName": "FATAL FIRE",
     "bandNameTitleCase": "Fatal Fire",
     "bandNameSlug": "fatal-fire",
-    "pdfPath": "pdf/Bandbewerbung FATAL FIRE.pdf",
+    "pdfPath": "pdf/fatal-fire.pdf",
     "exampleLink": "https://soundcloud.com/fatal-fire-449652741/fatal-fire-1-mp3/s-dfh9AFacY58?ref=clipboard&p=a&c=1&si=9553485f029041b38984c7a4402d0b4c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     "hometown": "Frankfurt am Main, Hessen",
     "genre": [
       "Power",
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "tim.kremer7@gmail.com"
   },
   {
     "bandName": "Frostgrab",
     "bandNameTitleCase": "Frostgrab",
     "bandNameSlug": "frostgrab",
-    "pdfPath": "pdf/Bandbewerbung Frostgrab.pdf",
+    "pdfPath": "pdf/frostgrab.pdf",
     "exampleLink": "https://open.spotify.com/artist/4WcZUNLt4NsvaSN7OXPI4H",
     "hometown": "Köln, Nordrhein-Westfalen",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "RuhrMetal@web.de"
   },
   {
     "bandName": "Dragonsfire",
     "bandNameTitleCase": "Dragonsfire",
     "bandNameSlug": "dragonsfire",
-    "pdfPath": "pdf/Bandbewerbung für 2026  DRAGONSFIRE .pdf",
+    "pdfPath": "pdf/dragonsfire.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=HeeeOB4Hhec",
     "hometown": "Stockstadt, Hessen",
     "genre": [
       "Power",
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "matt@dragonsfire.de"
   },
   {
     "bandName": "Gomorrha",
     "bandNameTitleCase": "Gomorrha",
     "bandNameSlug": "gomorrha",
-    "pdfPath": "pdf/Bandbewerbung Gomorrha.pdf",
+    "pdfPath": "pdf/gomorrha.pdf",
     "exampleLink": "https://magentacloud.de/s/4WnfEMj97A5W2y2?dir=undefined&openfile=5602117319",
     "hometown": "Frankenthal, Rheinland-Pfalz",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "king666@t-online.de"
   },
   {
     "bandName": "Saint",
     "bandNameTitleCase": "Saint",
     "bandNameSlug": "saint",
-    "pdfPath": "pdf/Bandbewerbung Inverted Saint.pdf",
+    "pdfPath": "pdf/saint.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=preFIl2GJSw",
     "hometown": "Stuttgart, Baden-Württemberg",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "info@inverted-saint.de"
   },
   {
     "bandName": "RA`S DAWN",
     "bandNameTitleCase": "Ra`s Dawn",
     "bandNameSlug": "ras-dawn",
-    "pdfPath": "pdf/Bandbewerbung Ras Dawn.pdf",
+    "pdfPath": "pdf/ras-dawn.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=OiwNrtq587o&list=RDOiwNrtq587o&start_radio=1",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Progressive"
-    ]
+    ],
+    "contactEmailAddress": "rasdawnband@gmail.com"
   },
   {
     "bandName": "Ravager",
     "bandNameTitleCase": "Ravager",
     "bandNameSlug": "ravager",
-    "pdfPath": "pdf/Bandbewerbung Schlacht um Otzenhausen  Ravager Thrash Metal Walsrode.pdf",
+    "pdfPath": "pdf/ravager.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=6YWy7O67vx4",
     "hometown": "Walsrode, Niedersachsen",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "RedDeathGuitar@gmx.de"
   },
   {
     "bandName": "FALLEN LIES",
     "bandNameTitleCase": "Fallen Lies",
     "bandNameSlug": "fallen-lies",
-    "pdfPath": "pdf/Bandbewerbung Schlacht um Otzenhausen 2026  FALLEN LIES Alternative Rock.pdf",
+    "pdfPath": "pdf/fallen-lies.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=hWNL_cYAtqk",
     "hometown": "Luxemburg",
     "genre": [
       "Alternative",
       "Rock"
-    ]
+    ],
+    "contactEmailAddress": "fallenliesband@gmail.com"
   },
   {
     "bandName": "Horizon Burns Wild",
     "bandNameTitleCase": "Horizon Burns Wild",
     "bandNameSlug": "horizon-burns-wild",
-    "pdfPath": "pdf/Bandbewerbung Schlacht um Otzenhausen 26.pdf",
+    "pdfPath": "pdf/horizon-burns-wild.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=kKQvDpqHmEg",
     "hometown": "St. Wendel, Saarland",
     "genre": [
       "Metalcore"
-    ]
+    ],
+    "contactEmailAddress": "band@hbw-metal.de"
   },
   {
     "bandName": "Pinch Black",
     "bandNameTitleCase": "Pinch Black",
     "bandNameSlug": "pinch-black",
-    "pdfPath": "pdf/Bandbewerbung Schlacht um Otzenhausen Festival 2026.pdf",
+    "pdfPath": "pdf/pinch-black.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=vsY_6YHW8Eo",
     "hometown": "Mainz, Rheinland-Pfalz",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "info@pinchblackofficial.com"
   },
   {
     "bandName": "Scythe Beast",
     "bandNameTitleCase": "Scythe Beast",
     "bandNameSlug": "scythe-beast",
-    "pdfPath": "pdf/Bandbewerbung Scythe Beast.pdf",
+    "pdfPath": "pdf/scythe-beast.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=wIbG-cVSkVk",
     "hometown": "Twistringen, Niedersachsen",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "scythebeast@gmail.com"
   },
   {
     "bandName": "Torturebitch",
     "bandNameTitleCase": "Torturebitch",
     "bandNameSlug": "torturebitch",
-    "pdfPath": "pdf/Bandbewerbung Torturebitch.pdf",
+    "pdfPath": "pdf/torturebitch.pdf",
     "exampleLink": "https://torturebitch.bandcamp.com/album/inhuman-declaration-of-war",
     "hometown": "Mücke, Hessen",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "torturebitch@gmx.de"
   },
   {
     "bandName": "Behind Your Fear",
     "bandNameTitleCase": "Behind Your Fear",
     "bandNameSlug": "behind-your-fear",
-    "pdfPath": "pdf/Bandbewerbung von Behind Your Fear für die Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/behind-your-fear.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=U87qYBTLYww",
     "hometown": "Püttlingen, Saarland",
     "genre": [
       "Gothic"
-    ]
+    ],
+    "contactEmailAddress": "booking_byf@gmx.de"
   },
   {
     "bandName": "Zerogod",
     "bandNameTitleCase": "Zerogod",
     "bandNameSlug": "zerogod",
-    "pdfPath": "pdf/Bandbewerbung Zerogod.pdf",
+    "pdfPath": "pdf/zerogod.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=YTrf9utGYok",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Thrash",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "flo.hoeh@gmail.com"
   },
   {
     "bandName": "Andi The Wicked",
     "bandNameTitleCase": "Andi The Wicked",
     "bandNameSlug": "andi-the-wicked",
-    "pdfPath": "pdf/Bandbewerbung-2.pdf",
+    "pdfPath": "pdf/andi-the-wicked.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=jS-R8YagOVE",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Instrumental",
       "Hard Rock"
-    ]
+    ],
+    "contactEmailAddress": "andithewicked@icloud.com"
   },
   {
     "bandName": "Sleepers' Guilt",
     "bandNameTitleCase": "Sleepers' Guilt",
     "bandNameSlug": "sleepers-guilt",
-    "pdfPath": "pdf/Bandbewerbung.pdf",
+    "pdfPath": "pdf/sleepers-guilt.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=7C69uOCUN20",
     "hometown": "Luxemburg, Luxemburg",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "sleepersguilt@gmail.com"
   },
   {
     "bandName": "Skelfir",
     "bandNameTitleCase": "Skelfir",
     "bandNameSlug": "skelfir",
-    "pdfPath": "pdf/BandbewerbungSkelfir.pdf",
+    "pdfPath": "pdf/skelfir.pdf",
     "exampleLink": "https://www.dropbox.com/scl/fi/g667fp6897jr0kj1bd5j0/GLOCKE.wav?rlkey=wj29a4d3ln1dm6kljzkxstw3u&e=1&st=q1ds9d2q&dl=0",
     "hometown": "Westerwald, Rheinland-Pfalz",
     "genre": [
       "Viking",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "r.ehlert87@web.de"
   },
   {
     "bandName": "BASTARD",
     "bandNameTitleCase": "Bastard",
     "bandNameSlug": "bastard",
-    "pdfPath": "pdf/Bandvorstellung.pdf",
+    "pdfPath": "pdf/bastard.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=hgK2nhdhrSg",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Thrash",
       "Hard Rock"
-    ]
+    ],
+    "contactEmailAddress": "esokoll75@gmx.de"
   },
   {
     "bandName": "BEAST",
     "bandNameTitleCase": "Beast",
     "bandNameSlug": "beast",
-    "pdfPath": "pdf/BEAST in der Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/beast.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=7Qh_T_dYERU",
     "hometown": "Osnabrück, Niedersachsen",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "beastmetal666@gmail.com"
   },
   {
     "bandName": "MINDREAPER",
     "bandNameTitleCase": "Mindreaper",
     "bandNameSlug": "mindreaper",
-    "pdfPath": "pdf/Bewerbung  Otzenhausen 2026  MINDREAPER.pdf",
+    "pdfPath": "pdf/mindreaper.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=bYlHPPorDOQ",
     "hometown": "Wetzlar, Hessen",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "ens@mindreaper.de"
   },
   {
     "bandName": "Terrible Headache",
     "bandNameTitleCase": "Terrible Headache",
     "bandNameSlug": "terrible-headache",
-    "pdfPath": "pdf/Bewerbung  Schlacht um Otzenhausen.pdf",
+    "pdfPath": "pdf/terrible-headache.pdf",
     "exampleLink": "https://open.spotify.com/artist/0NsCX673q8oZH7ygpVOCoz?si=9g5OEOZCSQ2WLRx0rPFOXw",
     "hometown": "Losheim, Saarland",
     "genre": [
       "Thrash",
       "Hardcore"
-    ]
+    ],
+    "contactEmailAddress": "terrible.headache@yahoo.com"
   },
   {
     "bandName": "SKRATTE",
     "bandNameTitleCase": "Skratte",
     "bandNameSlug": "skratte",
-    "pdfPath": "pdf/Bewerbung  Skratte.pdf",
+    "pdfPath": "pdf/skratte.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=_68AVAn2Q40",
     "hometown": "Fulda, Hessen",
     "genre": [
       "Black",
       "Folk"
-    ]
+    ],
+    "contactEmailAddress": "skrattebooking@gmail.com"
   },
   {
     "bandName": "ISNT",
     "bandNameTitleCase": "Isnt",
     "bandNameSlug": "isnt",
-    "pdfPath": "pdf/Bewerbung  Submit.pdf",
+    "pdfPath": "pdf/isnt.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=QBqS5UTtm04",
     "hometown": "Limburg an der Lahn, Hessen",
     "genre": [
       "Death",
       "Pop"
-    ]
+    ],
+    "contactEmailAddress": "isntmusic.band@gmail.com"
   },
   {
     "bandName": "AvatariA",
     "bandNameTitleCase": "Avataria",
     "bandNameSlug": "avataria",
-    "pdfPath": "pdf/Bewerbung 2026.pdf",
+    "pdfPath": "pdf/avataria.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=FIdfp4Vyl5A",
     "hometown": "Berlin",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "booking@avataria.de"
   },
   {
     "bandName": "Gateways",
     "bandNameTitleCase": "Gateways",
     "bandNameSlug": "gateways",
-    "pdfPath": "pdf/Bewerbung als Band Gateways.pdf",
+    "pdfPath": "pdf/gateways.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=W3lc9Nz_CFw",
     "hometown": "Pyrbaum, Bayern",
     "genre": [
       "Alternative",
       "Metal"
-    ]
+    ],
+    "contactEmailAddress": "Gateways.music@gmx.de"
   },
   {
     "bandName": "Chromantic Flash",
     "bandNameTitleCase": "Chromantic Flash",
     "bandNameSlug": "chromantic-flash",
-    "pdfPath": "pdf/Bewerbung CHROMANTIC FLASH Glam Metal aus MünchenDE.pdf",
+    "pdfPath": "pdf/chromantic-flash.pdf",
     "exampleLink": "https://youtu.be/RVbg56Yh9kE?si=gDdCA50J_Aftz23A",
     "hometown": "München, Bayern",
     "genre": [
       "Glam"
-    ]
+    ],
+    "contactEmailAddress": "chromantic.flash@gmx.de"
   },
   {
     "bandName": "Coven Call",
     "bandNameTitleCase": "Coven Call",
     "bandNameSlug": "coven-call",
-    "pdfPath": "pdf/Bewerbung Coven Call.pdf",
+    "pdfPath": "pdf/coven-call.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=CSvWOwXuJJE&list=RDCSvWOwXuJJE",
     "hometown": "Dortmund, Nordrhein-Westfalen",
     "genre": [
       "Symphonic"
-    ]
+    ],
+    "contactEmailAddress": "yves@covencall.com"
   },
   {
     "bandName": "Metalheads Germany Band",
     "bandNameTitleCase": "Metalheads Germany Band",
     "bandNameSlug": "metalheads-germany-band",
-    "pdfPath": "pdf/Bewerbung der Metalheads Germany Band.pdf",
+    "pdfPath": "pdf/metalheads-germany-band.pdf",
     "exampleLink": "https://youtu.be/idwex97uylw?si=IWhdZyXdcKNG-hx1",
     "hometown": "Alzey, Rheinland-Pfalz",
     "genre": [
       "Metal"
-    ]
+    ],
+    "contactEmailAddress": "metalheadsgermany@web.de"
   },
   {
     "bandName": "Disreality",
     "bandNameTitleCase": "Disreality",
     "bandNameSlug": "disreality",
-    "pdfPath": "pdf/Bewerbung Disreality.pdf",
+    "pdfPath": "pdf/disreality.pdf",
     "exampleLink": "https://drive.google.com/drive/folders/1MjpLenAICCQD5DJqv3RP9sUVLfvKqoC5",
     "hometown": "Köln, Nordrhein-Westfalen",
     "genre": [
       "Thrash",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "contact@disreality.de"
   },
   {
     "bandName": "Earache My Eye",
     "bandNameTitleCase": "Earache My Eye",
     "bandNameSlug": "earache-my-eye",
-    "pdfPath": "pdf/Bewerbung für Auftritte Schalcht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/earache-my-eye.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=KKwRXguX2NY",
     "hometown": "St. Ingbert, Saarland",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "earachemyeyeonline@gmail.com"
   },
   {
     "bandName": "GHOLA",
     "bandNameTitleCase": "Ghola",
     "bandNameSlug": "ghola",
-    "pdfPath": "pdf/Bewerbung für Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/ghola.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=ALwVBOWdKPo",
     "hometown": "Lebach, Saarland",
     "genre": [
       "Alternative",
       "Rock"
-    ]
+    ],
+    "contactEmailAddress": "gholabandofficial@gmail.com"
   },
   {
     "bandName": "Blood Bringer",
     "bandNameTitleCase": "Blood Bringer",
     "bandNameSlug": "blood-bringer",
-    "pdfPath": "pdf/Bewerbung für Schlacht um Otzenhausen oder Steelfest 2026.pdf",
+    "pdfPath": "pdf/blood-bringer.pdf",
     "exampleLink": "https://bloodbringer1.bandcamp.com/album/dead-world",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "s.vollmer1278@gmail.com"
   },
   {
     "bandName": "Gun Barrel",
     "bandNameTitleCase": "Gun Barrel",
     "bandNameSlug": "gun-barrel",
-    "pdfPath": "pdf/Bewerbung GUN BARREL.pdf",
+    "pdfPath": "pdf/gun-barrel.pdf",
     "exampleLink": "https://gunbarrel.bandcamp.com/album/sold-out-battle-tested",
     "hometown": "Linz am Rhein, Rheinland-Pfalz",
     "genre": [
       "Rock n Roll"
-    ]
+    ],
+    "contactEmailAddress": "gunbarrel@web.de"
   },
   {
     "bandName": "Losgadh",
     "bandNameTitleCase": "Losgadh",
     "bandNameSlug": "losgadh",
-    "pdfPath": "pdf/Bewerbung Losgadh für Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/losgadh.pdf",
     "exampleLink": "https://distrokid.com/hyperfollow/losgadh/moonless-night",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "band@losgadh.com"
   },
   {
     "bandName": "Concentric",
     "bandNameTitleCase": "Concentric",
     "bandNameSlug": "concentric",
-    "pdfPath": "pdf/Bewerbung Schlacht 2026 ConcentriC.pdf",
+    "pdfPath": "pdf/concentric.pdf",
     "exampleLink": "https://open.spotify.com/artist/20lRqdgHJdN1lWiSFbtYE3",
     "hometown": "Kastel, Saarland",
     "genre": [
       "Progressive",
       "Metalcore"
-    ]
+    ],
+    "contactEmailAddress": "info@concentric-band.de"
   },
   {
     "bandName": "Secutor",
     "bandNameTitleCase": "Secutor",
     "bandNameSlug": "secutor",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026-3.pdf",
+    "pdfPath": "pdf/secutor.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=XigCg-D3pTE",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "secutorthrash@web.de"
   },
   {
     "bandName": "Martyrion",
     "bandNameTitleCase": "Martyrion",
     "bandNameSlug": "martyrion",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026-4.pdf",
+    "pdfPath": "pdf/martyrion.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=7Q_8gTDcwkw",
     "hometown": "Köln, Nordrhein-Westfalen",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "kontakt@martyrion.com"
   },
   {
     "bandName": "Electrïc Süpergroüp",
     "bandNameTitleCase": "Electrïc Süpergroüp",
     "bandNameSlug": "electric-supergroup",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026-5.pdf",
+    "pdfPath": "pdf/electric-supergroup.pdf",
     "exampleLink": "https://open.spotify.com/track/02XJI1H9gQjMLNFAm7QzIO?si=a641f37428354afe",
     "hometown": "Trier, Rheinland-Pfalz",
     "genre": [
       "Hard Rock"
-    ]
+    ],
+    "contactEmailAddress": "electricsupergroup@gmx.de"
   },
   {
     "bandName": "Silence to the Fallen",
     "bandNameTitleCase": "Silence To The Fallen",
     "bandNameSlug": "silence-to-the-fallen",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026-6.pdf",
+    "pdfPath": "pdf/silence-to-the-fallen.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=fgooJUC_RxE",
     "hometown": "Marburg, Hessen",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "silencetothefallenofficial@gmail.com"
   },
   {
     "bandName": "HAILSTONE",
     "bandNameTitleCase": "Hailstone",
     "bandNameSlug": "hailstone",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026-7.pdf",
+    "pdfPath": "pdf/hailstone.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=vGorkWFwebM",
     "hometown": "München, Bayern",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "hailstonemunich@gmail.com"
   },
   {
     "bandName": "Roadkill BBQ",
     "bandNameTitleCase": "Roadkill Bbq",
     "bandNameSlug": "roadkill-bbq",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026-8.pdf",
+    "pdfPath": "pdf/roadkill-bbq.pdf",
     "exampleLink": "https://roadkill-bbq.bandcamp.com/album/live-compilation-june-25",
     "hometown": "Merzig, Saarland",
     "genre": [
       "Stoner",
       "Hard Rock"
-    ]
+    ],
+    "contactEmailAddress": "roadkillbbq.rock@gmail.com"
   },
   {
     "bandName": "Sonic Dynamite",
     "bandNameTitleCase": "Sonic Dynamite",
     "bandNameSlug": "sonic-dynamite",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026-9.pdf",
+    "pdfPath": "pdf/sonic-dynamite.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=Op30ooc143o",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "tobiasschmitt587@gmail.com"
   },
   {
     "bandName": "sarre libre",
     "bandNameTitleCase": "Sarre Libre",
     "bandNameSlug": "sarre-libre",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/sarre-libre.pdf",
     "exampleLink": "https://music.youtube.com/watch?v=IwxGD-Zi7a4",
     "hometown": "Saarwellingen, Saarland",
     "genre": [
       "Alternative",
       "Hardcore"
-    ]
+    ],
+    "contactEmailAddress": "sarrelibre@gmx.net"
   },
   {
     "bandName": "Everything Dies",
     "bandNameTitleCase": "Everything Dies",
     "bandNameSlug": "everything-dies",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/everything-dies.pdf",
     "exampleLink": "https://www.youtube.com/watch?si=3zS20X3oxZefirh2&v=1zioHIHDPG8&feature=youtu.be",
     "hometown": "Ilmenau, Thüringen",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "info@nargathrondmusic.com"
   },
   {
     "bandName": "OSSARIUM",
     "bandNameTitleCase": "Ossarium",
     "bandNameSlug": "ossarium",
-    "pdfPath": "pdf/Bewerbung Schlacht um Otzenhausen.pdf",
+    "pdfPath": "pdf/ossarium.pdf",
     "exampleLink": "https://open.spotify.com/album/4C0hBswebTFkQGhuhq3iZD?si=yuSxtawpSzuElEXfGNuJJA",
     "hometown": "München, Bayern",
     "genre": [
       "Death",
       "Doom"
-    ]
+    ],
+    "contactEmailAddress": "thomas-ossarium@web.de"
   },
   {
     "bandName": "AEONIK",
     "bandNameTitleCase": "Aeonik",
     "bandNameSlug": "aeonik",
-    "pdfPath": "pdf/Bewerbung SUO 2026.pdf",
+    "pdfPath": "pdf/aeonik.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=V7XrJGOjrMA",
     "hometown": "Luxemburg, Luxemburg",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "aeonikband@gmail.com"
   },
   {
     "bandName": "TINNITUS ATTACK",
     "bandNameTitleCase": "Tinnitus Attack",
     "bandNameSlug": "tinnitus-attack",
-    "pdfPath": "pdf/Bewerbung TINNITUS ATTACK.pdf",
+    "pdfPath": "pdf/tinnitus-attack.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=cIfJxsZn4mc",
     "hometown": "Magdeburg, Sachsen-Anhalt",
     "genre": [
       "Thrash",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "tinnitusattack@gmail.com"
   },
   {
     "bandName": "Tons of Water",
     "bandNameTitleCase": "Tons Of Water",
     "bandNameSlug": "tons-of-water",
-    "pdfPath": "pdf/Bewerbung Tons Of Water  SUO 2026.pdf",
+    "pdfPath": "pdf/tons-of-water.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=8RQAcu0lBVE",
     "hometown": "Lebach, Saarland",
     "genre": [
       "Thrash",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "tim@tbautz.de"
   },
   {
     "bandName": "Tridentifer",
     "bandNameTitleCase": "Tridentifer",
     "bandNameSlug": "tridentifer",
-    "pdfPath": "pdf/Bewerbung TRIDENTIFER DeathBlack.pdf",
+    "pdfPath": "pdf/tridentifer.pdf",
     "exampleLink": "https://www.youtube.com/watch?si=8xXY3duOG-jfuBm5&v=7M6cjwulFMg&feature=youtu.be",
     "hometown": "Kaiserslautern, Rheinland-Pfalz",
     "genre": [
       "Death",
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "redgrinmetal@googlemail.com"
   },
   {
     "bandName": "Skaldhammer",
     "bandNameTitleCase": "Skaldhammer",
     "bandNameSlug": "skaldhammer",
-    "pdfPath": "pdf/Bewerbung zur Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/skaldhammer.pdf",
     "exampleLink": "https://youtu.be/shC01RLRUao?si=Kbn6Tsd4Qh2lZe8V",
     "hometown": "Bexbach, Saarland",
     "genre": [
       "Folk"
-    ]
+    ],
+    "contactEmailAddress": "info@skaldhammer.com"
   },
   {
     "bandName": "CRUSHER",
     "bandNameTitleCase": "Crusher",
     "bandNameSlug": "crusher",
-    "pdfPath": "pdf/Bewerbung.pdf",
+    "pdfPath": "pdf/crusher.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=uJyUWhOqwMs",
     "hometown": "Mainz, Rheinland-Pfalz",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "robin_geiss@yahoo.de"
   },
   {
     "bandName": "BLESSED CHILD",
     "bandNameTitleCase": "Blessed Child",
     "bandNameSlug": "blessed-child",
-    "pdfPath": "pdf/BLESSED CHILD  Wut Leidenschaft und Vinylromantik.pdf",
+    "pdfPath": "pdf/blessed-child.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=mKH3YaIB5QE&t=13s",
     "hometown": "Braunschweig, Niedersachsen",
     "genre": [
       "Heavy",
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "marco@blessedchild.de"
   },
   {
     "bandName": "Void",
     "bandNameTitleCase": "Void",
     "bandNameSlug": "void",
-    "pdfPath": "pdf/Booking Anfrage 2026 Schlacht um Otzenhausem.pdf",
+    "pdfPath": "pdf/void.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=tlHLYGu9udU",
     "hometown": "Freiburg, Baden-Württemberg",
     "genre": [
       "Instrumental",
       "Progressive"
-    ]
+    ],
+    "contactEmailAddress": "progmusicbyvoid@gmail.com"
   },
   {
     "bandName": "Bad Butler",
     "bandNameTitleCase": "Bad Butler",
     "bandNameSlug": "bad-butler",
-    "pdfPath": "pdf/Booking Request 2026.pdf",
+    "pdfPath": "pdf/bad-butler.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=4tENZII8vHs&t=5s",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Heavy",
       "Hard Rock"
-    ]
+    ],
+    "contactEmailAddress": "booking@bad-butler.de"
   },
   {
     "bandName": "Bury The Liar",
     "bandNameTitleCase": "Bury The Liar",
     "bandNameSlug": "bury-the-liar",
-    "pdfPath": "pdf/Bookinganfrage 2026 Bury The Liar.pdf",
+    "pdfPath": "pdf/bury-the-liar.pdf",
     "exampleLink": "https://www.youtube.com/@burytheliar",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Metalcore"
-    ]
+    ],
+    "contactEmailAddress": "management-burytheliar@gmx.de"
   },
   {
     "bandName": "With Her Fall",
     "bandNameTitleCase": "With Her Fall",
     "bandNameSlug": "with-her-fall",
-    "pdfPath": "pdf/Bookinganfrage Alternative Metal mit Sängerin Schlacht um Otzenhausen Festival.pdf",
+    "pdfPath": "pdf/with-her-fall.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=MyewNbxjGB4",
     "hometown": "Darmstadt, Hessen",
     "genre": [
       "Alternative",
       "Metal"
-    ]
+    ],
+    "contactEmailAddress": "booking@withherfall.de"
   },
   {
     "bandName": "BURDEN OF GRIEF",
     "bandNameTitleCase": "Burden Of Grief",
     "bandNameSlug": "burden-of-grief",
-    "pdfPath": "pdf/Burden Of Grief  Schlacht von Otzenhausen.pdf",
+    "pdfPath": "pdf/burden-of-grief.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=3aOxLxpf4fA",
     "hometown": "Warburg, Nordrhein-Westfalen",
     "genre": [
       "Thrash",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "fliphanfland@aol.com"
   },
   {
     "bandName": "GALDERIA",
     "bandNameTitleCase": "Galderia",
     "bandNameSlug": "galderia",
-    "pdfPath": "pdf/Celtic Warriors fest 2026.pdf",
+    "pdfPath": "pdf/galderia.pdf",
     "exampleLink": "https://youtu.be/_Dmkho8MelQ?si=q6OSczQQ_8cXuSRw",
     "hometown": "Frankreich",
     "genre": [
       "Power"
-    ]
+    ],
+    "contactEmailAddress": "galderia.booking@gmail.com"
   },
   {
     "bandName": "KRATON",
     "bandNameTitleCase": "Kraton",
     "bandNameSlug": "kraton",
-    "pdfPath": "pdf/Cwo Website  Neue Kontaktanfrage-2.pdf",
+    "pdfPath": "pdf/kraton.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=amPID6YdaCI",
     "hometown": "Sandweiler, Luxemburg",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "vorstand@cwo-ev.de"
   },
   {
     "bandName": "InfiNight",
     "bandNameTitleCase": "Infinight",
     "bandNameSlug": "infinight",
-    "pdfPath": "pdf/Cwo Website  Neue Kontaktanfrage.pdf",
+    "pdfPath": "pdf/infinight.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=jUaKyTLUQlM",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "vorstand@cwo-ev.de"
   },
   {
     "bandName": "Painata",
     "bandNameTitleCase": "Painata",
     "bandNameSlug": "painata",
-    "pdfPath": "pdf/Die Painata Party um Otzenhausen.pdf",
+    "pdfPath": "pdf/painata.pdf",
     "exampleLink": "https://youtu.be/mV48ZOqA26M?si=I2eMD9RqO5GhOR3Z",
     "hometown": "Bochum, Nordrhein-Westfalen",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "painata@outlook.de"
   },
   {
     "bandName": "Call of the Sirens",
     "bandNameTitleCase": "Call Of The Sirens",
     "bandNameSlug": "call-of-the-sirens",
-    "pdfPath": "pdf/Die Todespfälzer auf eurer Veranstaltung.pdf",
+    "pdfPath": "pdf/call-of-the-sirens.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=wkZXUejYmy4",
     "hometown": "Rumbach, Rheinland-Pfalz",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "booking@callofthesirens.de"
   },
   {
     "bandName": "DISTANT THUNDER",
     "bandNameTitleCase": "Distant Thunder",
     "bandNameSlug": "distant-thunder",
-    "pdfPath": "pdf/DISTANT THUNDER.pdf",
+    "pdfPath": "pdf/distant-thunder.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=0oXe_8zvAgY",
     "hometown": "München, Bayern",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "husky@we-live.agency"
   },
   {
     "bandName": "Dust Bolt",
     "bandNameTitleCase": "Dust Bolt",
     "bandNameSlug": "dust-bolt",
-    "pdfPath": "pdf/DUST BOLT  Neues Album  Festivals 2026.pdf",
+    "pdfPath": "pdf/dust-bolt.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=uZ8e2bJAj0k",
     "hometown": "Würzburg, Bayern",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "laudi@stagekult.de"
   },
   {
     "bandName": "Extinct",
     "bandNameTitleCase": "Extinct",
     "bandNameSlug": "extinct",
-    "pdfPath": "pdf/Extinct Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/extinct.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=qxbKHCLsEHQ",
     "hometown": "Rendsburg, Schleswig-Holstein",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "vintageamp_backlineservice@hotmail.de"
   },
   {
     "bandName": "WarWolf",
     "bandNameTitleCase": "Warwolf",
     "bandNameSlug": "warwolf",
-    "pdfPath": "pdf/Festival 2026.pdf",
+    "pdfPath": "pdf/warwolf.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=6RALmHv9L3M",
     "hometown": "Köln, Nordrhein-Westfalen",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "erobauli@icloud.com"
   },
   {
     "bandName": "Minotaurus",
     "bandNameTitleCase": "Minotaurus",
     "bandNameSlug": "minotaurus",
-    "pdfPath": "pdf/Festival Bewertung.pdf",
+    "pdfPath": "pdf/minotaurus.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=pSb58yYeMLg",
     "hometown": "Aschaffenburg, Bayern",
     "genre": [
       "Folk"
-    ]
+    ],
+    "contactEmailAddress": "minotaurusmetal@aol.com"
   },
   {
     "bandName": "GREH",
     "bandNameTitleCase": "Greh",
     "bandNameSlug": "greh",
-    "pdfPath": "pdf/FestivalBewerbung GREH  BlackDeath Metal  2026.pdf",
+    "pdfPath": "pdf/greh.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=t3V4_Nzb0Cw",
     "hometown": "Karlsruhe, Baden-Württemberg",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "contact@greh.band"
   },
   {
     "bandName": "Full Stop",
     "bandNameTitleCase": "Full Stop",
     "bandNameSlug": "full-stop",
-    "pdfPath": "pdf/Full Stop X Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/full-stop.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=QPDqqFmI5PA",
     "hometown": "Freiburg im Breisgau, Baden-Württemberg",
     "genre": [
       "Metalcore"
-    ]
+    ],
+    "contactEmailAddress": "booking@fullstopband.de"
   },
   {
     "bandName": "Metall",
     "bandNameTitleCase": "Metall",
     "bandNameSlug": "metall",
-    "pdfPath": "pdf/Fw Bewerbung Band METALL 2026.pdf",
+    "pdfPath": "pdf/metall.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=BnetVqLO2aE",
     "hometown": "Berlin",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "sven_rappoldt@email.de"
   },
   {
     "bandName": "GHOSTS OF DAWN",
     "bandNameTitleCase": "Ghosts Of Dawn",
     "bandNameSlug": "ghosts-of-dawn",
-    "pdfPath": "pdf/GHOSTS OF DAWN  Geistreiche Erscheinungen in Otzenhausen.pdf",
+    "pdfPath": "pdf/ghosts-of-dawn.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=ijwbXcB3ks4",
     "hometown": "Keine Ahnung",
     "genre": [
       "Rock",
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "ghostsofdawn@gmx.net"
   },
   {
     "bandName": "AlleHackbar",
     "bandNameTitleCase": "Allehackbar",
     "bandNameSlug": "allehackbar",
-    "pdfPath": "pdf/Heavy Rockn Roll like Motörhead meets The Ramones.pdf",
+    "pdfPath": "pdf/allehackbar.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=z4n09WkOa3s",
     "hometown": "Schwarzwald, Baden-Württemberg",
     "genre": [
       "Heavy",
       "Rock"
-    ]
+    ],
+    "contactEmailAddress": "allehackbar@gmail.com"
   },
   {
     "bandName": "Elvellon",
     "bandNameTitleCase": "Elvellon",
     "bandNameSlug": "elvellon",
-    "pdfPath": "pdf/ich würde gerne mal wieder in Otzenhausen spielen .pdf",
+    "pdfPath": "pdf/elvellon.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=nHcI97vZQhc&list=PLGORKwfnsAlof_7aoQQqTgW9zOTXM3rLm&index=1",
     "hometown": "Moers, Nordrhein-Westfalen",
     "genre": [
       "Symphonic"
-    ]
+    ],
+    "contactEmailAddress": "jan@elvellon.net"
   },
   {
     "bandName": "Neðan",
     "bandNameTitleCase": "Neðan",
     "bandNameSlug": "nean",
-    "pdfPath": "pdf/Katharina  Auftrittsmöglichkeit im Saarland  update.pdf",
+    "pdfPath": "pdf/nean.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=wj_P0IfMNyM",
     "hometown": "Naters, Schweiz",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "nedan@gmx.net"
   },
   {
     "bandName": "AEROLITH",
     "bandNameTitleCase": "Aerolith",
     "bandNameSlug": "aerolith",
-    "pdfPath": "pdf/Konzert Aerolith.pdf",
+    "pdfPath": "pdf/aerolith.pdf",
     "exampleLink": "https://aerolith1.bandcamp.com/album/megalorama-part-ii",
     "hometown": "Salzburg, Österreich",
     "genre": [
       "Progressive"
-    ]
+    ],
+    "contactEmailAddress": "aerolith@sbg.at"
   },
   {
     "bandName": "Devil’s Hour",
     "bandNameTitleCase": "Devil’s Hour",
     "bandNameSlug": "devils-hour",
-    "pdfPath": "pdf/Konzertanfrage Devils Hour BlacknRoll.pdf",
+    "pdfPath": "pdf/devils-hour.pdf",
     "exampleLink": "https://tr.ee/EoXrg4ps6R",
     "hometown": "Frankfurt am Main, Hessen",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "devilshourofficial@gmail.com"
   },
   {
     "bandName": "LIZZORD",
     "bandNameTitleCase": "Lizzord",
     "bandNameSlug": "lizzord",
-    "pdfPath": "pdf/LIZZORD  Bewerbung um einen Slot auf eurer Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/lizzord.pdf",
     "exampleLink": "https://youtu.be/Bq1L-aTWm6k?si=Eei9LuynXheriS_P",
     "hometown": "Gerolstein, Rheinland-Pfalz",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "lizzordofficial@gmail.com"
   },
   {
     "bandName": "NIGHT LASER",
     "bandNameTitleCase": "Night Laser",
     "bandNameSlug": "night-laser",
-    "pdfPath": "pdf/Night Laser bei der Schlacht um Otzenhausen.pdf",
+    "pdfPath": "pdf/night-laser.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=jgd9T1pwhKA",
     "hometown": "Hamburg",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "Booking@Nightlaser.de"
   },
   {
     "bandName": "RADIOSICK",
     "bandNameTitleCase": "Radiosick",
     "bandNameSlug": "radiosick",
-    "pdfPath": "pdf/RADIOSICK bei der SUO 2026.pdf",
+    "pdfPath": "pdf/radiosick.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=vSxM3q8iAck",
     "hometown": "Rockeskyll, Rheinland-Pfalz",
     "genre": [
       "Cover"
-    ]
+    ],
+    "contactEmailAddress": "manuel@radiosick.de"
   },
   {
     "bandName": "Saints Anger",
     "bandNameTitleCase": "Saints Anger",
     "bandNameSlug": "saints-anger",
-    "pdfPath": "pdf/Saints Anger  Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/saints-anger.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=uWadEfdTG6E",
     "hometown": "Bremen",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "palacemetal@gmx.de"
   },
   {
     "bandName": "Sanity's Rage",
     "bandNameTitleCase": "Sanity's Rage",
     "bandNameSlug": "sanitys-rage",
-    "pdfPath": "pdf/Sanitys Rage  Belgian Thrash Metal  Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/sanitys-rage.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=ledwE7d5aAA",
     "hometown": "Brüssel, Belgien",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "sanitysrage@hotmail.com"
   },
   {
     "bandName": "Scarlet Anger",
     "bandNameTitleCase": "Scarlet Anger",
     "bandNameSlug": "scarlet-anger",
-    "pdfPath": "pdf/SCARLET ANGER from Luxemburg  Gig Application 2026.pdf",
+    "pdfPath": "pdf/scarlet-anger.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=WRlrqfnRBNg",
     "hometown": "Luxemburg, Luxemburg",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "scarletanger@live.de"
   },
   {
     "bandName": "BLOODSPOT",
     "bandNameTitleCase": "Bloodspot",
     "bandNameSlug": "bloodspot",
-    "pdfPath": "pdf/Schlacht um Otzenhausen 2026-2.pdf",
+    "pdfPath": "pdf/bloodspot.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=sszHTdZeOmw&list=OLAK5uy_lPBf09OiPKfKOKLK5OmMv21WwnL8v0tOY",
     "hometown": "Limburg an der Lahn, Hessen",
     "genre": [
       "Death",
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "bloodspot-music@gmx.de"
   },
   {
     "bandName": "Evil Excess",
     "bandNameTitleCase": "Evil Excess",
     "bandNameSlug": "evil-excess",
-    "pdfPath": "pdf/Schlacht um Otzenhausen 2026-3.pdf",
+    "pdfPath": "pdf/evil-excess.pdf",
     "exampleLink": "https://www.dropbox.com/sh/cxefqqat7j681x7/AADTYX_R_GWBPxgxvm6Fc8ywa?dl=0",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Speed"
-    ]
+    ],
+    "contactEmailAddress": "evilexcess@web.de"
   },
   {
     "bandName": "11redearth",
     "bandNameTitleCase": "11redearth",
     "bandNameSlug": "11redearth",
-    "pdfPath": "pdf/Schlacht um Otzenhausen 2026-4.pdf",
+    "pdfPath": "pdf/11redearth.pdf",
     "exampleLink": "https://11redearth.bandcamp.com/album/volcano",
     "hometown": "Bad Münstereifel, Nordrhein-Westfalen",
     "genre": [
       "Doom"
-    ]
+    ],
+    "contactEmailAddress": "11redearth@gmx.net"
   },
   {
     "bandName": "AEONBLACK",
     "bandNameTitleCase": "Aeonblack",
     "bandNameSlug": "aeonblack",
-    "pdfPath": "pdf/Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/aeonblack.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=bpONhem_jo0",
     "hometown": "Lörrach, Baden-Württemberg",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "holger@aeonblack.de"
   },
   {
     "bandName": "BLUTGOTT",
     "bandNameTitleCase": "Blutgott",
     "bandNameSlug": "blutgott",
-    "pdfPath": "pdf/Schlacht um Otzenhausen-2.pdf",
+    "pdfPath": "pdf/blutgott.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=Egf4xVovIsw",
     "hometown": "Heiningen, Baden-Württemberg",
     "genre": [
       "Death"
-    ]
+    ],
+    "contactEmailAddress": "debauchery-deathmetal@web.de"
   },
   {
     "bandName": "Anheim",
     "bandNameTitleCase": "Anheim",
     "bandNameSlug": "anheim",
-    "pdfPath": "pdf/Schlacht um Otzenhausen-3.pdf",
+    "pdfPath": "pdf/anheim.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=0RaZ5eSFFl8",
     "hometown": "Würzburg, Bayern",
     "genre": [
       "Black"
-    ]
+    ],
+    "contactEmailAddress": "manthizz@gmx.de"
   },
   {
     "bandName": "Spread of Disease",
     "bandNameTitleCase": "Spread Of Disease",
     "bandNameSlug": "spread-of-disease",
-    "pdfPath": "pdf/Schlacht um Otzenhausen.pdf",
+    "pdfPath": "pdf/spread-of-disease.pdf",
     "exampleLink": "https://spreadofdisease.bandcamp.com/track/the-art-of-violence",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "spreadofdisease@web.de"
   },
   {
     "bandName": "HELL IN THE SKIES",
     "bandNameTitleCase": "Hell In The Skies",
     "bandNameSlug": "hell-in-the-skies",
-    "pdfPath": "pdf/Showbewerbung für Konzerte von Hell in the Skies.pdf",
+    "pdfPath": "pdf/hell-in-the-skies.pdf",
     "exampleLink": "https://drive.google.com/drive/folders/14KxzxcmJ3fi5A299cryz4UuWVyEIl5qv",
     "hometown": "Eberswalde, Brandenburg",
     "genre": [
       "Stoner"
-    ]
+    ],
+    "contactEmailAddress": "bookinghellintheskies@gmail.com"
   },
   {
     "bandName": "STIGMATIZED",
     "bandNameTitleCase": "Stigmatized",
     "bandNameSlug": "stigmatized",
-    "pdfPath": "pdf/STIGMATIZED Schlacht 2026.pdf",
+    "pdfPath": "pdf/stigmatized.pdf",
     "exampleLink": "https://open.spotify.com/intl-de/artist/46mmS2fPFJhxLGCGKkpDTo?si=3oP5CFMyTH-kMIkSVA4SLQ&nd=1&dlsi=c529541d61ad4ae7",
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Death",
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "kraestig@gmx.de"
   },
   {
     "bandName": "Invictus",
     "bandNameTitleCase": "Invictus",
     "bandNameSlug": "invictus",
-    "pdfPath": "pdf/SUO 2026.pdf",
+    "pdfPath": "pdf/invictus.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=ssjRXsfPZEQ",
     "hometown": "Mering, Bayern",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "invictus.metal.booking@gmail.com"
   },
   {
     "bandName": "Traitor",
     "bandNameTitleCase": "Traitor",
     "bandNameSlug": "traitor",
-    "pdfPath": "pdf/Traitor  Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/traitor.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=z4UZiDT1DrA",
     "hometown": "Balingen, Baden-Württemberg",
     "genre": [
       "Thrash"
-    ]
+    ],
+    "contactEmailAddress": "lorenz_kandolf@web.de"
   },
   {
     "bandName": "Trickster's Day",
     "bandNameTitleCase": "Trickster's Day",
     "bandNameSlug": "tricksters-day",
-    "pdfPath": "pdf/Tricksters Day  Schlacht um Otzenhausen 2026.pdf",
+    "pdfPath": "pdf/tricksters-day.pdf",
     "exampleLink": "https://www.youtube.com/watch?v=UwT5S78tsso",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": "info@trickstersday.de"
   },
   {
     "bandName": "Walking Ghostphase",
     "bandNameTitleCase": "Walking Ghostphase",
     "bandNameSlug": "walking-ghostphase",
-    "pdfPath": "pdf/Walking Ghostphase Bewerbung SUO 2026.pdf",
+    "pdfPath": "pdf/walking-ghostphase.pdf",
     "exampleLink": "https://soundcloud.com/walking-ghostphase-1/on-the-edge?ref=clipboard&p=a&c=0&si=fc9b7ebe194c44f0beadfdfcaf79caea&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     "hometown": "Saarbrücken, Saarland",
     "genre": [
       "Speed"
-    ]
+    ],
+    "contactEmailAddress": "sadness.and.hate@googlemail.com"
   },
   {
     "bandName": "KINGSMASH",
     "bandNameTitleCase": "Kingsmash",
     "bandNameSlug": "kingsmash",
-    "pdfPath": "pdf/Wir sind KINGSMASH  Bandbewerbung.pdf",
+    "pdfPath": "pdf/kingsmash.pdf",
     "exampleLink": "https://www.dropbox.com/scl/fo/rsvc93nt4wfsjqzoyeexh/ALefJY-KpH5hBPC-NZEtjjk/Kingsmash%20EP%20MP3?dl=0&rlkey=k1vzoht95w99lmz3h4gx96uo8&subfolder_nav_tracking=1",
     "hometown": "Schwarzwald, Baden-Württemberg",
     "genre": [
       "Power"
-    ]
+    ],
+    "contactEmailAddress": "Kingsmash-band@gmx.de"
   },
   {
     "bandName": "Steelpreacher",
@@ -1255,6 +1365,7 @@
     "hometown": "Koblenz, Rheinland-Pfalz",
     "genre": [
       "Heavy"
-    ]
+    ],
+    "contactEmailAddress": ""
   }
 ]

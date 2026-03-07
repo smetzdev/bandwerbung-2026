@@ -2,12 +2,14 @@
 interface Props {
   bandNameTitleCase: string;
   bandNameSlug: string;
+  pdfPath: string;
   exampleLink: string;
+  contactEmailAddress: string;
   hometown: string;
   genre: string[];
 }
 
-const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } =
+const { bandNameTitleCase, bandNameSlug, pdfPath, exampleLink, contactEmailAddress, hometown, genre } =
   Astro.props;
 ---
 
@@ -52,12 +54,12 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } =
       }
     </div>
 
-    <div class="mt-auto pt-4">
+    <div class="mt-auto pt-4 flex gap-2">
       <a
         href={exampleLink}
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex w-full items-center justify-center gap-2 rounded-md
+        class="inline-flex flex-1 items-center justify-center gap-2 rounded-md
                bg-accent px-4 py-2.5 text-sm font-semibold text-white
                transition-colors duration-200 hover:bg-accent-hover
                focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
@@ -76,6 +78,57 @@ const { bandNameTitleCase, bandNameSlug, exampleLink, hometown, genre } =
         </svg>
         Anhören
         <span class="sr-only">(öffnet in neuem Tab)</span>
+      </a>
+
+      <a
+        href={`/${pdfPath}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center rounded-md border border-border
+               bg-surface px-2.5 py-2.5 text-text-secondary
+               transition-colors duration-200 hover:border-accent/40 hover:text-text-primary
+               focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        aria-label={`Bewerbungs-PDF öffnen: ${bandNameTitleCase}`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-5 w-5"
+          aria-hidden="true"
+        >
+          <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <path d="M9 13h6M9 17h4"/>
+        </svg>
+      </a>
+
+      <a
+        href={`mailto:${contactEmailAddress}`}
+        class="inline-flex items-center justify-center rounded-md border border-border
+               bg-surface px-2.5 py-2.5 text-text-secondary
+               transition-colors duration-200 hover:border-accent/40 hover:text-text-primary
+               focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        aria-label={`E-Mail schreiben an ${bandNameTitleCase}`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-5 w-5"
+          aria-hidden="true"
+        >
+          <rect width="20" height="16" x="2" y="4" rx="2"/>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+        </svg>
       </a>
     </div>
   </div>

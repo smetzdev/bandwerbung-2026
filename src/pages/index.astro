@@ -9,6 +9,7 @@ interface Band {
   bandNameSlug: string;
   pdfPath: string;
   exampleLink: string;
+  contactEmailAddress: string;
   hometown: string;
   genre: string[];
 }
@@ -67,7 +68,9 @@ const allGenres = [...new Set(bands.flatMap((b) => b.genre))].sort((a, b) =>
       <BandCard
         bandNameTitleCase={band.bandNameTitleCase}
         bandNameSlug={band.bandNameSlug}
+        pdfPath={band.pdfPath}
         exampleLink={band.exampleLink}
+        contactEmailAddress={band.contactEmailAddress}
         hometown={band.hometown}
         genre={band.genre}
       />
